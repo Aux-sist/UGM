@@ -1,6 +1,6 @@
 <h1>Fotografias Alumnos</h1> 
 <br>
-<form action="{{ url ('/alumnofotografia') }}" method="post" enctype="multipart/form-data">
+<form action="/upload" method="post" enctype="multipart/form-data">
     @csrf 
 
 <figure class="text-center">
@@ -34,5 +34,6 @@
 </ul>  
 </div>
 <br>
-
+<div class="d-grid gap-2 col-2 mx-auto">
+<input class="btn btn-success" type="submit" value="Adjuntar" >
 </form>

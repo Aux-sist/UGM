@@ -20,5 +20,7 @@ Route::get('/', function () {
 
 
 Route::post('/upload',function(Request $request){
-    Storage::disk("google")->putFileAs("",$request->file("thing"), "001010101.jpg");
+    Storage::disk("google")->putFileAs("",$request->file("thing"), "A001010101.jpg");
+    Storage::disk("google")->putFileAs("",$request->file("thing"), "A001010102.jpg");
+    Storage::disk("google")->putFileAs("",$request->file("thing"), "A001010103.jpg");
 })->name("upload");
