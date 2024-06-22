@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::post('/upload',function(Request $request){
     Storage::disk("google")->putFileAs("",$request->file("thing"), "001010101.jpg");
 })->name("upload");
